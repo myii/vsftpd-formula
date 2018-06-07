@@ -7,5 +7,6 @@ vsftpd_config:
     - template: jinja
     - user: root
     - mode: 644
+    - makedirs: true
     - watch_in:
       - service: {{ vsftpd.service }}
