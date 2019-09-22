@@ -2,11 +2,17 @@ control 'Vsftpd configuration' do
   title 'should match desired lines'
 
   config_file =
-    case os[:family]
+    case platform[:family]
     when 'debian', 'suse'
       '/etc/vsftpd.conf'
     when 'redhat', 'fedora'
       '/etc/vsftpd/vsftpd.conf'
+    # Catch remaining `linux` platforms to identify by `name` at the end
+    when 'linux'
+      case platform[:name]
+      when 'arch'
+        '/etc/vsftpd.conf'
+      end
     end
 
   describe file(config_file) do
