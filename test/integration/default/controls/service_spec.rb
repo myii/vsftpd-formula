@@ -6,4 +6,7 @@ control 'Vsftpd service' do
     it { should be_running }
   end
 
+  describe port(21) do
+    it { should be_listening }
+  end
 end
