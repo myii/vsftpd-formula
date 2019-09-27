@@ -1,7 +1,7 @@
 .. _readme:
 
 vsftpd-formula
-================
+==============
 
 |img_travis| |img_sr|
 
@@ -46,12 +46,20 @@ Available states
     :local:
 
 ``vsftpd``
-^^^^^^^^^^^^
+^^^^^^^^^^
 Installs and configures the vsftpd package.
 
+``vsftpd.package``
+^^^^^^^^^^^^^^^^^^
+Installs the vsftpd package.
+
 ``vsftpd.config``
-^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^
 This state manages the file ``vsftpd.conf`` under ``/etc/vsftpd`` (template found in "vsftpd/files"). The configuration is populated by values in "vsftpd/map.jinja" based on the package's default values (and RedHat, Debian, Suse and Arch family distribution specific values), which can then be overridden by values of the same name in pillar.
+
+``vsftpd.service``
+^^^^^^^^^^^^^^^^^^
+Manages the startup and running state of the vsftpd service.
 
 Testing
 -------
