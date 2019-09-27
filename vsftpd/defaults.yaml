@@ -1,0 +1,8 @@
+# -*- coding: utf-8 -*-
+# vim: ft=yaml
+---
+vsftpd:
+  server: vsftpd
+  service: vsftpd
+  vsftpd_config: /etc/vsftpd.conf
+  vsftpd_config_src: salt://vsftpd/files/vsftpd.conf
