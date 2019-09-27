@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.2](https://github.com/saltstack-formulas/vsftpd-formula/compare/v0.2.1...v0.2.2) (2019-09-27)
+
+
+### Code Refactoring
+
+* **states:** split vsftpd metastate in .package/.config/.service ([212feb1](https://github.com/saltstack-formulas/vsftpd-formula/commit/212feb1))
+
+
+### Tests
+
+* **inspec:** test if FTP port is open ([bbc15b0](https://github.com/saltstack-formulas/vsftpd-formula/commit/bbc15b0))
+
 ## [0.2.1](https://github.com/saltstack-formulas/vsftpd-formula/compare/v0.2.0...v0.2.1) (2019-09-25)
 
 
