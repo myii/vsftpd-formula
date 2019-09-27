@@ -1,5 +1,12 @@
 # Changelog
 
+# [0.3.0](https://github.com/saltstack-formulas/vsftpd-formula/compare/v0.2.2...v0.3.0) (2019-09-27)
+
+
+### Features
+
+* **map:** sync map.jinja with template-formula ([b747e43](https://github.com/saltstack-formulas/vsftpd-formula/commit/b747e43))
+
 ## [0.2.2](https://github.com/saltstack-formulas/vsftpd-formula/compare/v0.2.1...v0.2.2) (2019-09-27)
 
 
