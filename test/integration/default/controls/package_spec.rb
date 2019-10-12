@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 control 'Vsftpd package' do
   title 'should be installed'
 
