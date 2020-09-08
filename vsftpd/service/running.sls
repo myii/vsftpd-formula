@@ -13,5 +13,5 @@ vsftpd/service/running:
   service.running:
     - name: {{ vsftpd.service }}
     - enable: true
-    - require:
+    - watch:
       - sls: {{ sls_config_file }}
