@@ -17,6 +17,7 @@ vsftpd/config/install:
     - source: {{ vsftpd.vsftpd_config_src }}
     - template: jinja
     - user: root
+    - group: root
     - mode: 644
     - makedirs: true
 
