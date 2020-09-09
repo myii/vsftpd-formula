@@ -17,19 +17,20 @@ vsftpd/config/install:
     - source: {{ vsftpd.vsftpd_config_src }}
     - template: jinja
     - user: root
+    - group: root
     - mode: 644
     - makedirs: true
 
 vsftpd/config/chroot_dir:
   file.directory:
-    - user:  root
-    - name:  {{ vsftpd_config.secure_chroot_dir }}
-    - group:  root
-    - mode:  755
-    - makedirs: True
+    - name: {{ vsftpd_config.secure_chroot_dir }}
+    - user: root
+    - group: root
+    - mode: 755
+    - makedirs: true
 
 {% if vsftpd_config.anon_root is defined %}
 vsftpd/anon_dir/check:
   file.exists:
-      - name: {{ vsftpd_config.anon_root }}
+    - name: {{ vsftpd_config.anon_root }}
 {% endif %}
