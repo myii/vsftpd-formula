@@ -14,6 +14,8 @@ control 'Vsftpd configuration' do
       case platform[:name]
       when 'arch'
         '/etc/vsftpd.conf'
+      when 'gentoo'
+        '/etc/vsftpd/vsftpd.conf'
       end
     end
 

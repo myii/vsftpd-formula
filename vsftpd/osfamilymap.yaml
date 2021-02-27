@@ -16,3 +16,7 @@ FreeBSD:
 
 RedHat:
   vsftpd_config: /etc/vsftpd/vsftpd.conf
+
+Gentoo:
+  server: net-ftp/vsftpd
+  vsftpd_config: /etc/vsftpd/vsftpd.conf
